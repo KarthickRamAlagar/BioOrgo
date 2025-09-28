@@ -48,7 +48,7 @@ const AboutUs = () => {
   return (
     <div
       className="relative w-full max-w-8xl mx-auto  px-4  md:px-12 py-10 bg-white/20 backdrop-blur-md rounded-2xl shadow-lg"
-      id="about-us"
+    
     >
       <audio
         id="about-audio"

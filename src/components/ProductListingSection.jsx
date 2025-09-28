@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import "@/styles/running-border.css"; 
+import "@/styles/running-border.css";
 import { useState } from "react";
 
 export default function ProductListingSection() {
@@ -40,7 +40,7 @@ export default function ProductListingSection() {
         {/* Hero Banner */}
         <div className="w-full">
           <div className="hidden lg:flex relative w-full h-[300px] md:h-[400px] lg:h-[500px] 2xl:h-[600px] items-center justify-center overflow-hidden rounded-lg">
-            <h1 className="absolute text-[80px] sm:text-[120px] md:text-[200px] lg:text-[200px] xl:text-[280px] 2xl:text-[350px] font-extrabold text-gray-200/50 tracking-wide z-0 select-none">
+            <h1 className="absolute text-[70px] sm:text-[110px] md:text-[190px] lg:text-[190px] xl:text-[250px] 2xl:text-[320px] font-extrabold text-gray-200/50 tracking-wide z-0 select-none">
               BIOORGO
             </h1>
             <h3 className="relative z-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-gray-600 text-center">

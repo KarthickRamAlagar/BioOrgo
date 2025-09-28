@@ -4,7 +4,7 @@ import Catalogue from "@/components/Catalogue";
 import ContactSection from "@/components/ContactSeection";
 import Footer from "@/components/Footer";
 import PestResearch from "@/components/PestResearch";
-import  ProductListingSection  from "@/components/ProductListingSection";
+import ProductListingSection from "@/components/ProductListingSection";
 import TaglineSection from "@/components/TaglineSection";
 import React, { useRef } from "react";
 
@@ -12,34 +12,31 @@ const LandingPage = () => {
   const aboutUsRef = useRef(null);
   return (
     <div className=" w-full overflow-x-hidden ">
-
-
       {/* Tagline */}
       <TaglineSection scrollTargetRef={aboutUsRef} />
 
       {/* About us */}
-      <div ref={aboutUsRef}>
-        <AboutUs  />
+      <div ref={aboutUsRef} id="about-us">
+        <AboutUs />
       </div>
 
       {/* Basic Info */}
-      <BasicInfo  />
+      <BasicInfo />
 
       {/* Prdouct Display */}
       <ProductListingSection />
 
       {/* Catalogue  */}
-      <Catalogue  />
+      <Catalogue />
 
       {/* Pest Management  */}
-      <PestResearch  />
+      <PestResearch />
 
       {/* Contact */}
       <ContactSection />
 
       {/* Footer */}
       <Footer />
-      
     </div>
   );
 };
