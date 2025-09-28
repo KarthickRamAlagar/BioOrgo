@@ -1,0 +1,35 @@
+@keyframes borderPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.running-border {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.running-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, red, yellow, green, red);
+  background-size: 300% 300%;
+  animation: borderPulse 4s linear infinite;
+  z-index: 0;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+.running-border > * {
+  position: relative;
+  z-index: 1;
+  border-radius: 9999px;
+}
