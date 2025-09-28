@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-import NavigateButton from "./navigateButton";
+import NavigateButton from "./NavigateButton.jsx";
 
 const NameIntro = ({ scrollTargetRef }) => {
   const [startTyping, setStartTyping] = useState(false);
@@ -41,7 +41,7 @@ const NameIntro = ({ scrollTargetRef }) => {
   return (
     <div
       className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 drop-shadow-red-yellow leading-10 cursor-pointer"
-      onClick={handleStart} 
+      onClick={handleStart}
     >
       {/* Hidden audio element */}
       <audio ref={audioRef} src="/audio/Branding.mp3" preload="auto" />
